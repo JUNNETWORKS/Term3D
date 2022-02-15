@@ -6,7 +6,7 @@
 #    By: jtanaka <jtanaka@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/10 04:46:14 by jtanaka           #+#    #+#              #
-#    Updated: 2022/02/16 01:18:51 by jtanaka          ###   ########.fr        #
+#    Updated: 2022/02/16 01:23:25 by jtanaka          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,12 +82,10 @@ $(NAME): $(OBJECTS)
 
 .PHONY: clean
 clean:
-	$(LIBFT_MAKE) clean
 	$(RM) $(OBJECTS)
 
 .PHONY: fclean
 fclean: clean
-	$(LIBFT_MAKE) fclean
 	$(RM) $(NAME)
 
 .PHONY: re

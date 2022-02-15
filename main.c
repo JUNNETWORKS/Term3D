@@ -10,6 +10,7 @@ int	main(int argc, char **argv)
 		return (0);
 	point_list= get_point_list(argv[1]);
 	ft_show_point_list(point_list);
+	ft_lstclear(&point_list, &free);
 	return (0);
 }
 

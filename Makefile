@@ -1,7 +1,7 @@
 NAME = term3d
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-CFLAGS += -fsanitize=address
+CFLAGS += -g -fsanitize=address
 
 LIBFT_PATH = libft
 LIBFT_MAKE = $(MAKE) -C $(LIBFT_PATH)
