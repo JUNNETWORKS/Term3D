@@ -10,7 +10,7 @@ LIBFT_LIB = -L./libft -lft
 INCLUDES = -I./libft
 LDFLAGS = $(LIBFT_LIB)
 
-SRCS = main.c file_reader.c
+SRCS = main.c file_reader.c renderer.c terminal_info.c
 
 OBJ_DIR = objs
 OBJECTS = $(SRCS:%.c=$(OBJ_DIR)/%.o)

@@ -25,6 +25,6 @@ typedef struct s_point {
 
 t_list	*get_point_list(char *file_path);
 
-
+int     get_terminal_size(unsigned int *row, unsigned int *col);
 
 #endif

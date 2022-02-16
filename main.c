@@ -6,6 +6,11 @@ int	main(int argc, char **argv)
 {
 	t_list *point_list;
 
+	unsigned int height;
+	unsigned int width;
+
+	get_terminal_size(&height, &width);
+	printf("terminal width=%u height=%u\n", width, height);
 	if (argc == 1)
 		return (0);
 	point_list= get_point_list(argv[1]);
